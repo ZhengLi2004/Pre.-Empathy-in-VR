@@ -7,6 +7,11 @@
 \usepackage[UTF8]{ctex} % 主要中文支持包
 \usepackage{fontspec}   % 字体设置
 \usepackage{hyperref}
+\usepackage{svg}
+\svgsetup{
+    inkscapeexe = D:/Inkspace/bin/inkscape.exe,
+    inkscapelatex = false
+}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
 \usepackage{tikz}
@@ -225,9 +230,162 @@
     
 % \end{frame}
 
+\begin{frame}
+    \begin{center}
+        \textit{This page is intentionally left blank.}
+    \end{center}
+\end{frame}
+
+% 第四部分
+%------------------------------------------------
+\section{Introduction}
+%------------------------------------------------
+
+\begin{frame}{The "Empathy Machine" Hypothesis}
+    \begin{itemize}
+        \item VR被誉为「终极共情机器」，但缺乏实证支持
+        \item \alert{核心问题}：如何将VR特性与共情结果关联？
+        \item \textbf{共情类型}：
+            \begin{itemize}
+                \item 认知共情：理解他人视角（如叙事驱动）
+                \item 情感共情：情感共鸣（如身体反应）
+            \end{itemize}
+    \end{itemize}
+    \begin{block}{研究目标}
+        开发轻量级协议，低成本捕捉VR中的共情数据
+    \end{block}
+\end{frame}
+
+%------------------------------------------------
+\section{Challenges}
+%------------------------------------------------
+
+\begin{frame}{测量VR共情的挑战}
+    \begin{columns}[t]
+        \column{.5\textwidth}
+        \textbf{方法论局限}
+        \begin{itemize}
+            \item 自我报告的偏差（记忆衰减/认知过载）
+            \item 生理监测成本高（心率/皮肤电导）
+            \item VR特有因素：沉浸感、具身性、临场感
+        \end{itemize}
+        
+        \column{.5\textwidth}
+        \textbf{技术挑战}
+        \begin{itemize}
+            \item 第一人称视角难以外部观察
+            \item 玩家操作学习曲线干扰情感数据
+            \item 标准化工具的缺乏
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------
+\section{Proposed Framework}
+%------------------------------------------------
+
+\begin{frame}{轻量级测量协议}
+    \begin{block}{核心设计原则}
+        \begin{itemize}
+            \item 低成本：仅需基础VR设备 + 免费软件（OBS Studio）
+            \item 多模态数据：同步录制玩家动作 + VR画面 + 音频
+            \item 标准化工具：情感轮 + IOS量表
+        \end{itemize}
+    \end{block}
+    
+    \begin{figure}
+        \includegraphics[width=0.3\linewidth]{g1434.pdf}  % 需替换为实际图片
+        \caption{情感轮（Plutchik, 1980）}
+    \end{figure}
+\end{frame}
+
+%------------------------------------------------
+
+\begin{frame}{实验流程设计}
+    \begin{columns}[c]
+        \column{.6\textwidth}
+        \begin{enumerate}
+            \item \textbf{预访谈}：评估VR熟悉度
+            \item \textbf{第一次体验}（20分钟）：熟悉操作
+            \item \textbf{视频回放访谈}：情感轮标记关键瞬间
+            \item \textbf{第二次体验}（30分钟）：聚焦叙事
+            \item \textbf{后测问卷}：VR版IOS量表
+        \end{enumerate}
+        
+        \column{.4\textwidth}
+        \begin{alertblock}{关键创新}
+            多次体验减少操作干扰，增强叙事沉浸
+        \end{alertblock}
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------
+\section{Key Findings}
+%------------------------------------------------
+
+\begin{frame}{实验结果}
+    \begin{itemize}
+        \item \textbf{身体反应的价值}：姿势变化/无意识言语揭示共情强度
+        \item \textbf{玩家熟悉度}：新手因操作挫折降低共情得分（需基线校准）
+        \item \textbf{重复体验效应}：第二次体验的叙事共情提升40\%（示例数据）
+    \end{itemize}
+    
+    \begin{exampleblock}{典型反馈}
+        「第二次体验时，我更关注角色的手势细节，感受到更强的代入感」
+    \end{exampleblock}
+\end{frame}
+
+%------------------------------------------------
+\section{Limitations \& Future Work}
+%------------------------------------------------
+
+\begin{frame}{局限与未来方向}
+    \begin{columns}[t]
+        \column{.5\textwidth}
+        \textbf{当前局限}
+        \begin{itemize}
+            \item 工具验证不足（如情感轮 vs. EQ量表）
+            \item 缺乏共情基线数据
+            \item 样本局限于研究团队
+        \end{itemize}
+        
+        \column{.5\textwidth}
+        \textbf{未来计划}
+        \begin{itemize}
+            \item 跨群体验证协议鲁棒性
+            \item 集成实时生理监测（低成本方案）
+            \item 开发自动化情感标注工具
+        \end{itemize}
+    \end{columns}
+\end{frame}
+
+%------------------------------------------------
+\section{Conclusion}
+%------------------------------------------------
+
+\begin{frame}{研究意义}
+    \begin{itemize}
+        \item \alert{方法论贡献}：首个针对VR共情的轻量级标准化协议
+        \item \textbf{设计启示}：通过重复体验优化叙事沉浸
+        \item \textbf{跨学科潜力}：支持心理学、HCI、游戏设计的共情研究
+    \end{itemize}
+    
+    \begin{block}{愿景}
+        推动「共情驱动型VR」从概念到实证的转化
+    \end{block}
+\end{frame}
+
+%------------------------------------------------
 
 \begin{frame}
-\frametitle{Ethical Challenges & Future Directions}
+    \begin{center}
+        \textit{This page is intentionally left blank.}
+    \end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Ethical Challenges \& Future Directions}
 \begin{itemize}
     \item \textbf{VR as the “Ultimate Empathy Machine”:}
     \begin{itemize}
