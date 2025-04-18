@@ -4,10 +4,16 @@
 
 \documentclass[aspectratio=169,xcolor=dvipsnames]{beamer}
 \usetheme{SimpleDarkBlue}
+\usepackage[UTF8]{ctex} % 主要中文支持包
+\usepackage{fontspec}   % 字体设置
 \usepackage{hyperref}
 \usepackage{graphicx} % Allows including images
 \usepackage{booktabs} % Allows the use of \toprule, \midrule and \bottomrule in tables
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows,positioning}
 
+\tikzstyle{block} = [rectangle, draw, rounded corners, minimum height=1.5cm, 
+                    text width=3cm, text centered, drop shadow, fill=white]
 %----------------------------------------------------------------------------------------
 %    TITLE PAGE
 %----------------------------------------------------------------------------------------
@@ -35,8 +41,177 @@
 % % First Teammate
 % \section{Background}
 
-% % Second Teammate
-% \section{Technology}
+% Second Teammate
+\section{Technology}
+\begin{frame}{Technology}
+    \centering
+    \vspace{-0.5cm}
+    
+    \begin{columns}[onlytextwidth,T]
+        \column{0.48\textwidth}
+        \begin{block}{\color{white!80!black}存在性 }
+ 
+        \end{block}
+        
+        \vspace{0.3cm}
+        
+        \begin{alertblock}{\color{white!70!black}具身VR和全身所有权错觉}
+
+   
+        \end{alertblock}
+        
+        \column{0.48\textwidth}
+        \begin{block}{\color{white!80!black}代理错觉 }
+
+ 
+        \end{block}
+        
+        \vspace{0.3cm}
+        
+        \begin{alertblock}{\color{white!80!black}内感知信号操控}
+
+
+        \end{alertblock}
+    \end{columns}
+    
+    \vspace{0.5cm}
+    
+    \begin{block}{\color{white!80!black}普罗透斯效应}
+ 
+
+    \end{block}
+    
+    \vspace{0.3cm}
+    
+    \begin{beamercolorbox}[wd=0.9\textwidth,center,sep=4pt,rounded=true,shadow=true]{block body}
+        \footnotesize
+        这些技术相互配合，共同构建了一个能够促使用户产生共情和利他行为的虚拟环境。\\
+        通过营造沉浸感、建立身体所有权、增强代理感、调节情绪以及引导行为，\\
+        VR技术展现了其在促进共情能力方面的巨大潜力。
+    \end{beamercolorbox}
+\end{frame}
+
+
+\begin{frame}{存在性}
+    \begin{enumerate}
+        \item 存在性：通过地方错觉和可信度错觉，VR可以让用户感受到身临其境和真实，从而更容易产生共情。
+        \begin{itemize}
+            \item \textbf{存在性 (Presence):}
+            \item 地方错觉 (Place Illusion): 通过高分辨率、大视场角的显示技术，结合3D音频和触觉反馈（如触觉手套、振动平台），营造出身临其境的虚拟环境，让用户感觉像真的置身于虚拟场景中。
+            \item 可信度错觉 (Plausibility Illusion): 通过逼真的图形渲染、物理引擎模拟、以及符合现实世界逻辑的交互设计，让虚拟环境的行为和反应看起来真实可信，增强用户的沉浸感。
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{具身VR和全身所有权错觉}
+    \begin{enumerate}
+        \setcounter{enumi}{1}
+        \item 具身VR和全身所有权错觉：通过让用户感受到自己拥有一个不同的身体，VR可以让用户从他人视角体验世界，从而更容易理解他人的感受和需求。
+        \begin{itemize}
+            \item \textbf{具身VR和全身所有权错觉 (Embodiment and Body Ownership Illusion):}
+            \item 具身VR (Embodied VR): 使用能够追踪全身动作的传感器（如全身动捕系统、深度摄像头），将用户的动作实时映射到虚拟化身上，使用户能够以虚拟身体的视角在虚拟环境中进行交互。
+            \item 全身所有权错觉 (Body Ownership Illusion): 通过视觉、触觉和本体感觉的同步，让用户将虚拟身体感知为自己的身体。例如，当虚拟手接触虚拟物体时，用户的手也同时感受到触觉反馈，从而增强对虚拟身体的拥有感。
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{代理错觉}
+    \begin{enumerate}
+        \setcounter{enumi}{2}
+        \item 代理错觉：通过让用户感受到自己对虚拟身体的行动具有控制权，VR可以让用户产生对利他行为的自我归因，从而增强利他行为。
+        \begin{itemize}
+            \item \textbf{代理错觉 (Agency):}
+            \item 动作同步 (Action Synchronization): 精确的动作捕捉和低延迟的渲染技术，确保用户的动作与虚拟化身的行为同步，让用户感觉自己完全控制着虚拟身体。
+            \item 因果反馈 (Causal Feedback): 虚拟环境对用户的动作做出符合预期的反应，例如，虚拟手按下按钮后，虚拟设备启动，使用户明确感知到自己的行为对环境产生了影响。
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{内感知信号操控}
+    \begin{enumerate}
+        \setcounter{enumi}{3}
+        \item 内感知信号操控：通过操控用户的生理信号，VR可以帮助用户控制情绪，从而将共情转化为同情和利他行为。
+        \begin{itemize}
+            \item \textbf{内感知信号操控 (Interoceptive Signal Manipulation):}
+            \item 生理信号监测 (Physiological Signal Monitoring): 使用生物传感器（如心率监测仪、呼吸传感器、皮肤电传感器）实时监测用户的生理状态。
+            \item 生理信号反馈 (Physiological Signal Feedback): 将监测到的生理信号以视觉、听觉或触觉的形式反馈给用户，例如，将心率以虚拟场景中的颜色变化表示，或者通过调整虚拟环境的音乐节奏来反映用户的情绪状态。
+            \item 生理信号调节 (Physiological Signal Regulation): 通过生物反馈技术，引导用户调节自己的生理状态，例如，通过控制呼吸来降低心率，从而控制情绪。
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{普罗透斯效应}
+    \begin{enumerate}
+        \setcounter{enumi}{4}
+        \item 普罗透斯效应：通过使用具有利他特征的虚拟形象，VR可以影响用户的行为和态度，从而促进共情和利他行为。
+        \begin{itemize}
+            \item \textbf{普罗透斯效应 (Proteus Effect):}
+            \item 虚拟化身定制 (Avatar Customization): 允许用户自定义虚拟化身的外貌、性格和行为特征，特别是赋予其具有利他特征的属性，如帮助他人的行为、友善的表情等。
+            \item 行为引导 (Behavioral Priming): 在虚拟环境中设计特定的情境和任务，引导用户扮演具有利他特征的虚拟角色，例如，帮助虚拟角色解决困难、与虚拟角色进行积极的互动等。
+        \end{itemize}
+    \end{enumerate}
+    
+    \vspace{5mm}
+    
+\end{frame}
+ \begin{frame}{设计基于VR的共情训练的框架 }
+    该框架基于三个关键问题，并提供了相关的共情能力、调节器、催化剂、学习方法和VR技术。旨在帮助教育者设计有效的VR共情训练应用。
+     \begin{block}{What is the relationship between emote and observer?}
+        情绪化者与观察者之间的关系是什么？
+     \end{block}
+
+     \begin{alertblock}{How developed is the self-awareness of the observer?}
+     观察者的自我意识是如何发展的？
+      \end{alertblock}
+
+     \begin{block}{How developed are the empathic abilities of the observer toward the emote?}
+     观察者对情绪化者的同理心能力如何发展？
+      \end{block}
+     
+          
+ \end{frame}
+ 
+\begin{frame}{What is the relationship between emote and observer?}
+    
+    \begin{enumerate}
+        \item \textbf{What is the relationship between emote and observer?（情绪化者与观察者之间的关系是什么？）}
+        \begin{itemize}
+            \item Abilities（能力）：群际开放性、反思思维、社交技能、冲突管理。
+            \item Catalysts（催化剂）：长期培训、安全环境、协作动力、参与志愿活动。
+            \item Moderators（调节器）：增加对外群体成员的熟悉度、亲和力和相似性；减少偏见、刻板印象、编码预测和对内群体成员的分类思考；增强平等主义目标和自我分析。
+            \item Learning methods（学习方法）：建构主义和社会情感学习用于反思思维的仪器化；实施平等主义目标；重复启动非刻板印象联想；个体化和否定刻板印象；正念训练用于非评判性思维实践。
+            \item EVR methods（虚拟现实方法）：增强自我-其他相似性的群体间体现；普罗透斯效应
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{How developed is the self-awareness of the observer?}
+    \begin{enumerate}
+        \setcounter{enumi}{1}
+        \item \textbf{How developed is the self-awareness of the observer?（观察者的自我意识是如何发展的？）}
+        \begin{itemize}
+            \item Abilities（能力）：身体、情感、认知和社会自我意识。
+            \item Catalysts（催化剂）：教育者作为促进者。
+            \item Moderators（调节器）：自我-他人区分；情绪识别；平等主义的内部和社会目标。
+            \item Learning methods（学习方法）：正念训练用于内省觉知；实施平等主义目标；心理扫描。
+            \item EVR methods（虚拟现实方法）：PI和PSI错觉；内感知信号操控。
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
+
+\begin{frame}{How developed are the empathic abilities of the observer toward the emote?}
+    \begin{enumerate}
+        \setcounter{enumi}{2}
+        \item \textbf{How developed are the empathic abilities of the observer toward the emote?（观察者对情绪化者的同理心能力如何发展？）}
+        \begin{itemize}
+            \item Abilities（能力）：情感同理心、认知同理心、同理心准确性、同理心痛苦调节、同情心、利他主义、问题解决。
+            \item Catalysts（催化剂）：基于真实世界的案例和情境知识。
+            \item Moderators（调节器）：情感投入、视角转换、在线模拟、对话技巧、当前注意力、仁爱、动机、帮助的力量和技巧；行为表达的自控。
+            \item Learning methods（学习方法）：角色扮演；正念训练用于当前注意力、视角转换和同情心；实施平等主义目标；心理扫描。
+            \item EVR methods（虚拟现实方法）：多传感器第一人称视角转换同步性；普罗透斯效应和代理错觉。
+        \end{itemize}
+    \end{enumerate}
+\end{frame}
 
 % % Third Teammate
 % \section{Applications}
