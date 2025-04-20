@@ -45,6 +45,182 @@
 
 % % First Teammate
 % \section{Background}
+\section{Background and Core Concept}
+% --- 介绍两篇综述 ---
+\begin{frame}{两篇关键系统性综述}
+    背景部分汇报内容主要基于以下两篇近期的系统性综述论文：
+
+    \begin{block}{Measurement of Empathy in Virtual Reality with Head-Mounted Displays: A Systematic Review\cite{lee2024measurement}}
+        \textbf{期刊:} IEEE Transactions on Visualization and Computer Graphics \\
+        \textbf{关注点:} HMD VR 对共情的影响；认知 vs. 情感共情；影响因素的\alert{元分析}；强调VR作为认知共情工具。
+    \end{block}
+
+    \begin{block}{From Digital Media to Empathic Spaces: A Systematic Review of Empathy Research in Extended Reality Environments\cite{paananen2022digital}}
+         \textbf{期刊:} ACM Computing Surveys \\
+         \textbf{关注点:} 涵盖更广泛的 \alert{XR 环境}；强调\alert{空间性 (Spatiality)} 的核心作用；提出“共情现实 (ER)”概念；关注设计伦理和未来研究路线图。
+    \end{block}
+\end{frame}
+\begin{frame}{为何关注 VR 中的共情？}
+    \begin{itemize}
+        \item \textbf{共情的重要性:} 理解和感受他人情绪与处境的能力，是亲社会行为和人际连接的基础。
+        \item \textbf{“终极共情机器”:} 虚拟现实 (VR) 提供前所未有的\alert{沉浸感}和\alert{临场感}，允许用户“设身处地”体验他人视角，被 Chris Milk 等人誉为“终极共情机器”。
+        \item \textbf{研究热点:} 随着 VR 技术（尤其是头戴式显示器 HMD）的普及，其在共情培养和研究中的应用日益受到关注。
+    \end{itemize}
+    \begin{figure}
+        % 可以在此插入一张示意图，例如一个人戴着VR头显体验场景
+        \includegraphics[width=0.6\linewidth]{background1.jpg}
+        \caption{VR 提供沉浸式体验以促进共情}
+    \end{figure}
+\end{frame}
+
+% --- 核心概念 ---
+\begin{frame}{共情与 VR/XR}
+    \begin{columns}[c]
+        \column{.45\textwidth}
+            \textbf{共情 (Empathy)}
+            \begin{itemize}
+                \item \textbf{认知共情 (Cognitive Empathy):} 理解他人观点、想法和意图的能力 (Perspective-taking)。
+                \item \textbf{情感共情 (Emotional Empathy):} 分享和感受他人情绪状态的能力 (Affective response)。
+                \item \textbf{其他维度:} 有时也提及躯体共情 (Somatic Empathy) 等。
+            \end{itemize}
+
+        \column{.45\textwidth}
+            \textbf{虚拟/扩展现实 (VR/XR)}
+             \begin{itemize}
+                \item \textbf{VR:} 完全沉浸在计算机生成的虚拟世界中。
+                \item \textbf{AR (增强现实):} 将数字信息叠加到现实世界。
+                \item \textbf{MR (混合现实):} 虚拟与现实物体共存并可交互。
+                \item \textbf{XR (扩展现实):} 涵盖 VR, AR, MR 的总称。
+            \end{itemize}
+    \end{columns}
+     \begin{alertblock}{关键特性}
+        VR/XR 的关键在于其\alert{沉浸性 (Immersion)}、\alert{临场感 (Presence)} 和 \alert{交互性 (Interactivity)}，这些特性被认为有助于共情的产生。
+    \end{alertblock}
+\end{frame}
+
+% --- 研究发现 (Lee et al.) ---
+\begin{frame}{VR 对不同类型共情的影响}
+    基于对 111 篇 HMD VR 研究的系统回顾与元分析 \cite{lee2024measurement}：
+    \begin{block}{认知共情 vs. 情感共情}
+        \begin{itemize}
+            \item VR \alert{显著提升认知共情}，该效果相对\alert{持久}，不易随时间衰减。
+            \item VR \alert{暂时提升情感共情}，但效果会随时间推移\alert{回归基线水平}。
+            \item VR 在提升认知共情方面\alert{优于 2D 视频}，但在提升情感共情方面未显示明显优势（甚至可能不如2D视频）。
+        \end{itemize}
+    \end{block}
+    \begin{theorem}[Lee et al. 结论推断]
+       VR 可能更像是一个“终极\textbf{认知}共情机器”。它通过沉浸式视角转换，促进了对他人的理解，而非简单的情感传染。
+    \end{theorem}
+\end{frame}
+
+\begin{frame}{影响 VR 共情效果的因素}
+    \begin{columns}[t]
+        \column{.48\textwidth}
+            \textbf{显著影响因素 \cite{lee2024measurement}:}
+             \begin{itemize}
+                \item \textbf{年龄:} 对成年人和青年人的共情提升效果比儿童和青少年更显著。
+                \item \textbf{国籍/文化:} 不同文化背景的参与者共情水平存在差异。
+                \item \textbf{临场感 (Presence):} 与共情水平呈正相关。
+                \item \textbf{具身感 (Embodiment):} 用户感觉自己拥有虚拟身体，与共情水平正相关。
+                \item \textbf{叙事与故事性:} 可能比技术细节更重要。
+            \end{itemize}
+
+        \column{.48\textwidth}
+             \textbf{影响不显著的因素:}
+             \begin{itemize}
+                \item \textbf{交互性 (Interactivity):} 主动交互 vs. 被动观看，在元分析中未发现对共情有显著影响。
+                \item \textbf{共情目标 (Target of Empathy):} 针对自身、他人化身或环境，影响不显著。
+                \item \textbf{视角 (Point of View):} 第一人称 vs. 第三人称等，影响不显著。
+             \end{itemize}
+            \begin{alertblock}{注意}
+            这些因素影响不显著，是指在\textbf{荟萃分析统计层面}上。具体到单个实验或特定设计，它们可能仍有作用，尤其是叙事和角色塑造。
+            \end{alertblock}
+    \end{columns}
+\end{frame}
+
+% --- 研究发现 (Paananen et al.) ---
+\begin{frame}{空间性在 XR 共情中的作用}
+    基于对 XR 环境中共情研究的系统回顾：
+    \begin{itemize}
+        \item \textbf{空间性 (Spatiality) 是核心:} 人类通过空间理解世界，空间背景深刻影响共情体验。研究需关注共情发生的\alert{物理和虚拟空间环境}。
+        \item \textbf{共情现实 (Empathic Reality, ER):} 在XR空间上叠加共情层，连接物理与虚拟，创造新的共情体验途径。
+        \item \textbf{情境坍塌 (Context Collapse):} 现实世界的社会规范与虚拟世界的规则（或缺乏规则）可能发生冲突或融合，影响用户行为和共情。
+        \item \textbf{非人类共情:} XR 可用于模拟非人类视角（动物、物体、自然现象），拓展共情的边界。
+        \item \textbf{空间体验本身:} 安全感、可达性、美学等空间体验也可作为激发共情的来源（空间共情）。
+    \end{itemize}
+     \begin{examples}
+        例如，在虚拟的贫民窟行走 \cite{paananen2022digital} 与在熟悉的办公室体验同事的困难，其空间背景带来的共情基础截然不同。
+    \end{examples}
+\end{frame}
+
+% --- 测量与挑战 ---
+\begin{frame}{如何测量 VR 中的共情？}
+    \begin{columns}[c]
+        \column{.5\textwidth}
+            \textbf{常用方法:}
+            \begin{itemize}
+                \item \textbf{问卷调查 (最常用):}
+                    \begin{itemize}
+                        \item IRI (Interpersonal Reactivity Index)
+                        \item BEA (Batson's Empathic Adjectives)
+                        \item QCAE 等
+                    \end{itemize}
+                \item \textbf{生物信号:} EEG, HR, SCR 等 (研究较少)。
+                \item \textbf{行为观察/分析。}
+                \item \textbf{混合方法:} 结合定量与定性。
+            \end{itemize}
+
+        \column{.45\textwidth}
+             \textbf{挑战与局限:}
+             \begin{itemize}
+                \item \textbf{主观性与偏见:} 问卷易受社会期许效应影响。
+                \item \textbf{客观测量难度:} 生物信号数据处理复杂，与共情关联需验证。
+                \item \textbf{长期效果追踪难:} 大部分研究只看短期效果。
+                \item \textbf{生态效度:} 实验室环境与现实生活差异。
+                \item \textbf{设计伦理:} 如何负责任地使用他人经验，避免伤害和刻板印象。
+            \end{itemize}
+    \end{columns}
+    \begin{alertblock}{现状}
+    当前测量仍以主观问卷为主，对共情的客观、长期、生态化测量是未来研究的重要方向。
+    \end{alertblock}
+\end{frame}
+
+
+% --- 未来方向 ---
+\begin{frame}{VR/XR 共情研究的未来展望}
+    根据 \cite{paananen2022digital} 等综述的建议，未来研究可关注：
+    \begin{itemize}
+        \item \textbf{长期共情机制:} 探索如何设计能产生持久共情影响的XR体验。
+        \item \textbf{超越人类的共情:} 研究如何利用XR促进对动物、自然环境甚至抽象概念的共情。
+        \item \textbf{空间共情的深化:} 如何利用空间设计、空间叙事来增强共情？城市、家居等不同空间如何定制共情体验？
+        \item \textbf{更鲁棒的测量与评估:} 发展更客观、结合情境的共情测量方法。
+        \item \textbf{设计框架与伦理指南:} 建立XR共情工具的设计原则和伦理规范，平衡效果与责任。
+        \item \textbf{元宇宙中的共情:} 在大规模、持续存在的虚拟世界中，共情将扮演何种角色？如何设计和管理？
+    \end{itemize}
+    \begin{examples}
+        例如，开发一个持续性的AR应用，让用户在日常生活中通过空间线索感知城市无家可归者的困境，而非一次性的VR体验。
+    \end{examples}
+\end{frame}
+
+% --- 结论 ---
+\begin{frame}{总结}
+    \begin{itemize}
+        \item VR/XR 作为一种新兴媒介，在\alert{激发和研究共情}方面展现出巨大潜力，尤其是提升\alert{认知共情}。
+        \item 其效果受到用户个人特征（年龄、文化）和体验设计（临场感、具身感、叙事）的影响，而交互方式等技术细节的直接影响可能相对较小。
+        \item \alert{空间性(Spatiality)}是理解和设计XR共情体验的关键维度，需要超越传统媒介的视角。
+        \item 当前研究在测量方法、长期效果、伦理规范等方面仍面临挑战。
+        \item 未来的研究需要在深化理论理解、拓展应用场景（如非人类、空间共情）和完善设计实践（框架、伦理）方面继续努力。
+    \end{itemize}
+    \begin{alertblock}{核心信息}
+    VR 不仅仅是技术，更是创造“体验”的工具。在共情领域，理解其如何塑造认知、情感和对空间的感知至关重要。
+    \end{alertblock}
+\end{frame}
+
+\begin{frame}{References}
+    \footnotesize
+    \bibliography{reference.bib}
+    \bibliographystyle{apalike}
+\end{frame}
 
 % Second Teammate
 \section{Technology}
